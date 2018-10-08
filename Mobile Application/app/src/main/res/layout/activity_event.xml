@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginLeft="5dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/event_name"
+    android:textStyle="bold"
+    android:padding="5dp"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/eventLocation"
+    android:padding="5dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/startDateLabel"
+    android:textStyle="bold"
+    android:text="Start Date"
+    android:padding="5dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/startDate"
+    android:padding="5dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/endDateLabel"
+    android:textStyle="bold"
+    android:text="End Date"
+    android:padding="5dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/endDate"
+    android:padding="5dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/createdByLabel"
+    android:textStyle="bold"
+    android:text="Created By"
+    android:padding="5dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/createdBy"
+    android:padding="5dp"/>
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/completedLabel"
+    android:textStyle="bold"
+    android:text="Completed"
+    android:padding="5dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/completed"
+    android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/invitedUsersLabel"
+                android:textStyle="bold"
+                android:text="Invited Users"
+                android:padding="5dp"/>
+
+            <ListView
+                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:id="@+id/invitedUsers"
+                android:padding="5dp">
+            </ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attendedUsersLabel"
+                android:textStyle="bold"
+                android:text="User Attended"
+                android:padding="5dp"
+                android:layout_toRightOf="@+id/invitedUsersLabel"/>
+
+            <ListView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/userAttended"
+                android:padding="5dp"
+                android:layout_toRightOf="@+id/invitedUsers">
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
